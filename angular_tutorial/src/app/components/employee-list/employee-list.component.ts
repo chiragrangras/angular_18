@@ -4,8 +4,8 @@ import { Component } from '@angular/core';
   selector: 'app-employee-list',
   standalone: true,
   imports: [],
-  templateUrl: './employee-list.component.html',
-  styleUrl: './employee-list.component.css'
+  template: '<h1 class="text-primary">Hello From Admin</h1>',
+  styles: ['.primary{color:red}']
 })
 export class EmployeeListComponent {
 
