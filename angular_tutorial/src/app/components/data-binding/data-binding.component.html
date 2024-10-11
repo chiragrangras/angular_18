@@ -5,24 +5,51 @@
 </div>
 
 <div class="row">
-  <div class="col-4">
+  <div class="col-6">
     <div class="row">
       <div class="col-4 bg-success">
         Interpolation
         <h4>
           {{ courseName }}
         </h4>
-        <div>{{inputType}}</div>
-        <input type="text" value="{{courseName}}" placeholder="Enter text"/>
-        <input type="{{inputType}}"/>
+        <div>{{ inputType }}</div>
+        <input type="text" value="{{ courseName }}" placeholder="Enter text" />
+        <input type="{{ inputType }}" />
       </div>
       <div class="col-4">
         Property Binding
-
-        <div [class] ="myClassName">Danger</div>
+        <div [class]="myClassName">Danger</div>
+        <input type="text" [value]="courseName" />
+        <input [type]="inputType" />
+      </div>
+      <div class="col-4">
+        <button
+          class="btn btn-success"
+          (click)="showAlert('Welcome to Angular 18')"
+        >
+          Show Welcome
+        </button>
+        <span (click)="showAlert('this is from span')">Click me</span>
+        <button class="btn btn-success" (click)="changeCourseName()">
+          Change Course
+        </button>
       </div>
     </div>
   </div>
-  <div class="col-4"></div>
-  <div class="col-4"></div>
+  <div class="col-6">
+    <input type="text" [(ngModel)]="courseName" /> - &nbsp;{{ courseName }}
+    <input type="checkbox" [(ngModel)]="isIndian" />
+    <!-- ngModel using only Input Elements -->
+
+    <select [(ngModel)]="stateName">
+      <option value="">Select</option>
+      <option value="Gujarat">Gujarat</option>
+      <option value="Goa">Goa</option>
+      <option value="Delhi">Delhi</option>
+      <option value="Maharashtra">Maharashtra</option>
+    </select>
+  </div>
+  <div class="col-6">
+    <h2>{{firstName()}}</h2>
+  </div>
 </div>
