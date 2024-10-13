@@ -1,0 +1,19 @@
+Angular 18 Tutorial - Part 1
+Node Js Install - https://node.js.org/en
+
+Check If Node Installed by Checking - npm --v
+
+Install Angular Cli - npm install -g @angular/cli
+
+Check If Installed - ng v
+
+https://angular.dev - Angular Home Wesite
+
+Create Project - ng new angular_tutorial
+
+run project - ng serve
+
+				ng serve --o
+				
+				ng serve --port 4204 
+ 
