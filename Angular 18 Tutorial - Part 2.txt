@@ -1,0 +1,15 @@
+Angular 18 Tutorial - Part 2
+
+Project Files n Structure
+
+package.json
+angular.json
+style.css
+gitignore
+tsconfig.json
+
+main_ts
+index.html
+
+
+app,config.ts
