@@ -1,0 +1,15 @@
+Angular 18 Tutorials -- Part-3
+
+******** Data Binding ********
+
+1. One Way Data Binding
+	=> from .ts to .html
+	   interpolation, property Binding
+
+	=> from .html to .ts
+	   even binding
+
+2. Two Way Data Binding
+	=>using ngModal
+
+3.Using Signal ( angular 17 onwards) 
