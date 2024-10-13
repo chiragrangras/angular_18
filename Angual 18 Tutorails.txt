@@ -1,0 +1,15 @@
+Angual 18 Tutorails
+
+***** Component *****
+
+How To Component ?
+What is Component ?
+What is Stand Alone Component ?
+
+
+What Is Component Decorators ?
+
+component.ts
+
+ng generate component 
+ng g c
