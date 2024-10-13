@@ -1,0 +1,20 @@
+***** Angular 18 Tutorial *****
+
+__________Directives__________
+
+1.Structural Directive
+
+	*ngIf - to add remove element from DOM
+	*ngFor - to Create dynamic Element
+	*ngSwitch - switch case to Dynamic Element
+
+*ngIf - it need of false value
+	we can pass value either from
+		variable
+		comparison
+		function
+*ngFor - we need to pass array
+	 we can value either from
+	 	variable
+		function
+
