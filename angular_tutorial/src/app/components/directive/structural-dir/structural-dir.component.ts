@@ -18,6 +18,19 @@ export class StructuralDirComponent {
 
   isActive: boolean = false;
 
+  selectedState: string = '';
+
+  cityArray: string[] = ['Gujarat', 'Ajmer', 'Pune', 'Nagpur'];
+
+  studentList: any[] = [
+    {studentId:13, name: 'AAA', city: 'Gujarat', isActive: false },
+    {studentId:25, name: 'BBB', city: 'Ajmer', isActive: false },
+    {studentId:53, name: 'CCC', city: 'Pune', isActive: true },
+    {studentId:44, name: 'DDD', city: 'Nagpur', isActive: false },
+    {studentId:52, name: 'EEE', city: 'Delhi', isActive: false },
+    {studentId:64, name: 'FFF', city: 'Mumbai', isActive: true },
+  ];
+
   showDiv1() {
     this.isDiv1Visiable = true;
   }
