@@ -1,0 +1,17 @@
+****** Angular 18 Tutorial ****** Part-7
+
+___________Routing___________
+
+SPA - Single Page Application 
+
+What is Routing ?
+
+What is Routing Object ?
+
+How to Create Routes ?
+
+How to Implement navbar fir navigation ?
+
+How to redirect from on Component to Other Component
+	1) from.js
+	2) from.html 
