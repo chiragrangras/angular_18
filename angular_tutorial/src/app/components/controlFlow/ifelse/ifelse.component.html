@@ -1,0 +1,81 @@
+<div class="mt-2 p-2 bg-secondary text-white rounded">
+  <h4>Control Flow Statement</h4>
+  <h3>
+    <span>&#64;</span> if,<span>&#64;</span> else,<span>&#64;</span> else if,
+  </h3>
+</div>
+<div class="row pt-3">
+  <div class="col-3">
+    @if(div1Visiable == true) {
+    <div class="p-3 text-center text-white bg-primary">
+      <h4>Div-1</h4>
+    </div>
+    }
+  </div>
+  <div class="col-3">
+    @if(isWarningDivVisiable){
+    <div class="p-3 text-center text-white bg-warning">
+      <h4>Div-2 Warning</h4>
+    </div>
+    }@else{
+    <div class="p-3 text-center text-white bg-success">
+      <h4>Div-2 Success</h4>
+    </div>
+    }
+  </div>
+  <div class="col-3">
+    @if(num1===num2){
+    <div class="p-3 text-center text-white bg-warning">
+      <h4>Div-3</h4>
+    </div>
+    }
+  </div>
+  <div class="col-3">
+    <div class="p-3 text-center text-white bg-danger">
+      @if(slectedStatus == 'Active'){
+      <p style="font-size: 20px;">Student is Active</p>
+      } @else if(slectedStatus == 'De-Active'){
+      <p style="font-size: 20px;">Student is De-Active</p>
+      }@else if(slectedStatus == 'Pending'){
+      <p style="font-size: 20px;">Student is Pending</p>
+      }@else{
+      <p style="font-size: 20px;">Please Select Status</p>
+      }
+    </div>
+  </div>
+</div>
+<div class="row pt-3">
+  <div class="col-3 text-center">
+    <button class="btn btn-danger" (click)="hideDiv1()">Hide</button>
+    <button class="btn btn-primary mx-2" (click)="showDiv1()">Show</button>
+  </div>
+  <div class="col-3 text-center">
+    <button class="btn btn-success" (click)="toggleDiv2()">Toggle</button>
+  </div>
+  <div class="col-3">
+    <div style="display: flex; align-items: center">
+      <input
+        type="text"
+        [(ngModel)]="num1"
+        placeholder="Num-1"
+        class="width-50"
+      />
+      <input
+        type="text"
+        [(ngModel)]="num2"
+        placeholder="Num-2"
+        class="width-50"
+      />
+    </div>
+  </div>
+  <div class="col-3">
+    <div style="display: flex; align-items: center">
+      <select [(ngModel)]="slectedStatus">
+        <option value="">Select Status</option>
+        <option value="Active">Active</option>
+        <option value="De-Active">De-Active</option>
+        <option value="Pending">Pending</option>
+      </select>
+    </div>
+  </div>
+</div>
