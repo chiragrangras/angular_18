@@ -1,0 +1,12 @@
+****** Angular 18 Tutorial ****** Part-7
+
+___________Control Flow___________
+
+What is Control Flow Statements ?
+
+
+How  to Write @if,@else,@else if
+
+How to write @for 
+
+How to write @switch
