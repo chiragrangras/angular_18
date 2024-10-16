@@ -9,7 +9,8 @@ import { FormsModule } from '@angular/forms';
   styleUrl: './for.component.css'
 })
 export class ForComponent {
-  dayNumber: string = ''; 
+  dayNumber: string = '';
+  dayName:string='';
   cityArray: string [] = ['Pune','Mumbai','Nagpur','Thane'];
 
   studentList: any[] = [
@@ -20,6 +21,4 @@ export class ForComponent {
     {studId:34, name:'EE', city: 'Nagpur', isActive:  false},
     {studId:76, name:'FFF', city: 'Thane', isActive:  true},
   ]
-
-
 }
