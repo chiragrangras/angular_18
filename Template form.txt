@@ -1,0 +1,18 @@
+Template form
+	ngModel
+
+more code in .html
+
+less code in .ts
+
+validation easy
+
+suitable for simple forms
+
+Steps
+
+Create an object where we have all fields
+
+bind properties to all input element by ngModel
+
+on click submit we get form object
