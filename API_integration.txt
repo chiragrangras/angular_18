@@ -1,0 +1,16 @@
+***** Angular !8 Tutorial *****
+
+_________ API Integration _________
+
+
+What is Http Client ?
+
+What are Get, Post, Put, Delete methods ?
+
+What is API ?
+
+Get API
+	.https://jsonplaceholder.typicode.com/users
+	
+	.https://projectapi.gerasim.in/api/RealEstate/GetAllCustomers
+	
