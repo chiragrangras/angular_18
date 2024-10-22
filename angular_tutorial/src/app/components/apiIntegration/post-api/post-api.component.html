@@ -1,9 +1,3 @@
-<app-alert  [alertType]="'Warning'" [message]="'Welcome To Post Page'"></app-alert>
- <br>
- <app-alert  [alertType]="'Error'" [message]="'Some error Occoured'"></app-alert>
-
- <app-my-button (onBtnClick)="getData($event)" [btnClass]="'btn btn-success'" [btnText]="'Save Record'"></app-my-button>
-
 <div class="row pt-2">
     <div class="col-8">
         <div class="card">
@@ -23,20 +17,14 @@
                                 </tr>
                             </thead>
                             <tbody>
-                                @for (item of deptList; track $index) {
                                 <tr>
-                                    <td>{{$index+1}} </td>
-                                    <td>{{item.departmentName}}</td>
-                                    <td>{{item.departmentLogo}}</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
                                     <td> 
-                                        <button class="btn btn-primary" (click)="onEdit(item)">Edit</button>
-                                        <app-my-button (onBtnClick)="onDelete(item.departmentId)" [btnClass]="'btn btn-danger'" [btnText]="'Delete'"></app-my-button>
-
-                                        <!-- <button class="btn btn-danger" (click)="onDelete(item.departmentId)">Delete</button> -->
+                                        <button class="btn btn-primary">Edit</button>
                                     </td>
                                 </tr>
-                                }
-
                             </tbody>
                         </table>
                     </div>
@@ -68,11 +56,8 @@
                         <button class="btn btn-secondary">Reset</button>
                     </div>
                     <div class="col-6 text-center"> 
-                        @if(deptObj.departmentId == 0) {
                             <button class="btn btn-success" (click)="onSave()">Save </button>
-                        }@else {
-                            <button class="btn btn-warning" (click)="onUpdate()">Update </button>
-                        } 
+                            <button class="btn btn-warning">Update </button>
                     </div>
                 </div>
             </div>
