@@ -29,17 +29,22 @@ export class PostAPIComponent implements OnInit {
   }
 
   onDelete(id: number) {
-    this.http
-      .delete(
-        'https://projectapi.gerasim.in/api/Complaint/DeletedepartmentBydepartmentId'+id)
-      .subscribe((res: any) => {
-        if (res.result) {
-          alert('Department Deleted Success');
-          this.getDepartment();
-        } else {
-          alert(res.message);
-        }
-      });
+    const isDelete = confirm("Are you sure want to to delete");
+    if (isDelete) {
+      this.http
+        .delete(
+          'https://projectapi.gerasim.in/api/Complaint/DeletedepartmentBydepartmentId' +
+            id
+        )
+        .subscribe((res: any) => {
+          if (res.result) {
+            alert('Department Deleted Success');
+            this.getDepartment();
+          } else {
+            alert(res.message);
+          }
+        });
+    }
   }
 
   onSave() {
